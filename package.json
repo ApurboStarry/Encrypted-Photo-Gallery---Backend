@@ -1,0 +1,30 @@
+{
+  "name": "encrypted-photo-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "compression": "^1.7.2",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "firebase": "^8.2.6",
+    "helmet": "^3.11.0",
+    "joi": "^17.4.0",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.2",
+    "xhr2": "^0.2.1"
+  }
+}
