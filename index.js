@@ -15,12 +15,15 @@ if(!config.get("jwtPrivateKey")) {
 }
 
 mongoose
-  .connect("mongodb://localhost/encrypted-photo-gallery", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  })
+  .connect(
+    "mongodb+srv://apurbo:984621kk@cluster0.potfq.mongodb.net/EncryptedPhotoGallery?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+    }
+  )
   .then(() => console.log("Connected to MongoDB..."))
   .catch((error) => console.log("Could not connect to MongoDB!!!", error));
 
