@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "encryptedPhotoGallery_jwtPrivateKey"
+  "jwtPrivateKey": "encryptedPhotoGallery_jwtPrivateKey",
+  "db": "encryptedPhotoGallery_db"
 }

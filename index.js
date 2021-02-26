@@ -14,9 +14,14 @@ if(!config.get("jwtPrivateKey")) {
   process.exit(1);
 }
 
+if (!config.get("db")) {
+  console.log("FATAL ERROR: db is not defined");
+  process.exit(1);
+}
+
 mongoose
   .connect(
-    "mongodb+srv://apurbo:984621kk@cluster0.potfq.mongodb.net/EncryptedPhotoGallery?retryWrites=true&w=majority",
+    config.get("db"),
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
